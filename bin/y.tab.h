@@ -45,23 +45,67 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    NUMBER = 258,
-    ID = 259,
-    IF = 260,
-    OPER = 261,
-    ELSE = 262,
-    OR = 263,
-    SP = 264
+    INT = 258,
+    FLOAT = 259,
+    CHAR = 260,
+    DOUBLE = 261,
+    VOID = 262,
+    FOR = 263,
+    WHILE = 264,
+    IF = 265,
+    ELSE = 266,
+    PRINTF = 267,
+    NUM = 268,
+    ID = 269,
+    INCLUDE = 270,
+    DOT = 271,
+    OPER = 272,
+    NUMBER = 273,
+    SP = 274,
+    STRUCT = 275,
+    LONG = 276,
+    RETURN = 277,
+    SCANF = 278,
+    AND = 279,
+    OR = 280,
+    LE = 281,
+    GE = 282,
+    EQ = 283,
+    NE = 284,
+    LT = 285,
+    GT = 286
   };
 #endif
 /* Tokens.  */
-#define NUMBER 258
-#define ID 259
-#define IF 260
-#define OPER 261
-#define ELSE 262
-#define OR 263
-#define SP 264
+#define INT 258
+#define FLOAT 259
+#define CHAR 260
+#define DOUBLE 261
+#define VOID 262
+#define FOR 263
+#define WHILE 264
+#define IF 265
+#define ELSE 266
+#define PRINTF 267
+#define NUM 268
+#define ID 269
+#define INCLUDE 270
+#define DOT 271
+#define OPER 272
+#define NUMBER 273
+#define SP 274
+#define STRUCT 275
+#define LONG 276
+#define RETURN 277
+#define SCANF 278
+#define AND 279
+#define OR 280
+#define LE 281
+#define GE 282
+#define EQ 283
+#define NE 284
+#define LT 285
+#define GT 286
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
