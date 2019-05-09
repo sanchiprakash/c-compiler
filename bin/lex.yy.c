@@ -550,9 +550,11 @@ char *yytext;
 #line 1 "new.l"
 #line 2 "new.l"
 #include"y.tab.h"
+#include<stdio.h>
+#include<ctype.h>
 extern yylval;
-int c=2;
-#line 556 "lex.yy.c"
+int c=0;
+#line 558 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -773,11 +775,11 @@ YY_DECL
 		}
 
 	{
-#line 10 "new.l"
+#line 12 "new.l"
 
 
 
-#line 781 "lex.yy.c"
+#line 783 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -837,185 +839,185 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 13 "new.l"
+#line 15 "new.l"
 {c=atoi(yytext);
 								return NUM;	}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 15 "new.l"
+#line 17 "new.l"
 ;
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 16 "new.l"
+#line 18 "new.l"
 { yylineno = yylineno + 1;
           if(c+1==yylineno){
          return 0; }}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 19 "new.l"
+#line 21 "new.l"
 {return INT;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 20 "new.l"
+#line 22 "new.l"
 {return FLOAT;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 21 "new.l"
+#line 23 "new.l"
 {return CHAR;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 22 "new.l"
+#line 24 "new.l"
 {return VOID;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 23 "new.l"
+#line 25 "new.l"
 {return DOUBLE;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 24 "new.l"
+#line 26 "new.l"
 {return FOR;}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 25 "new.l"
+#line 27 "new.l"
 {return WHILE;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 26 "new.l"
+#line 28 "new.l"
 {return IF;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 27 "new.l"
+#line 29 "new.l"
 {return ELSE;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 28 "new.l"
+#line 30 "new.l"
 {return PRINTF;}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 29 "new.l"
+#line 31 "new.l"
 {return SCANF;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 30 "new.l"
+#line 32 "new.l"
 {return STRUCT;}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 31 "new.l"
+#line 33 "new.l"
 {return LONG;}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 32 "new.l"
+#line 34 "new.l"
 {return RETURN;}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 33 "new.l"
+#line 35 "new.l"
 {return INCLUDE;}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 34 "new.l"
+#line 36 "new.l"
 {return INCLUDE;}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 35 "new.l"
+#line 37 "new.l"
 {return INCLUDE;}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 36 "new.l"
+#line 38 "new.l"
 {return INCLUDE;}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 37 "new.l"
+#line 39 "new.l"
 {return INCLUDE;}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 38 "new.l"
+#line 40 "new.l"
 {return NUM;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 39 "new.l"
+#line 41 "new.l"
 {return ID;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 40 "new.l"
+#line 42 "new.l"
 {return LE;}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 41 "new.l"
+#line 43 "new.l"
 {return GE;}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 42 "new.l"
+#line 44 "new.l"
 {return EQ;}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 43 "new.l"
+#line 45 "new.l"
 {return NE;}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 44 "new.l"
+#line 46 "new.l"
 {return GT;}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 45 "new.l"
+#line 47 "new.l"
 {return LT;}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 46 "new.l"
+#line 48 "new.l"
 {return DOT;}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 47 "new.l"
+#line 49 "new.l"
 ;
 	YY_BREAK
 case 33:
 /* rule 33 can match eol */
 YY_RULE_SETUP
-#line 48 "new.l"
+#line 50 "new.l"
 ;
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 51 "new.l"
+#line 53 "new.l"
 {return yytext[0];}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 52 "new.l"
+#line 54 "new.l"
 ECHO;
 	YY_BREAK
-#line 1019 "lex.yy.c"
+#line 1021 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2019,11 +2021,25 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 52 "new.l"
+#line 54 "new.l"
 
 
 int yywrap()
 {
     return 0;
 }
+/*
+int main()
+{
+    FILE *fpi, *fpo;
+    fpi = fopen("line.txt", "r");
+
+	printf("%s",yyin);
+
+
+    yylex();
+    return 0;
+}
+
+*/
 

@@ -1,13 +1,4 @@
-13
-#include<stdio.h>
+4
 int main()
-{
-int a;
-int b;
-int c;
-printf("Enter two numbers to add");
-scanf("%d%d", &a, &b);
-c = a + b;
-printf("Sum of the numbers = %d", c);
-return 0;
-}
+{int g=0;
+int a=5;}

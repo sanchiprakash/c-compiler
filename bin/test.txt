@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 13
 #include<stdio.h>
 int main()
@@ -11,3 +12,9 @@ c = a + b;
 printf("Sum of the numbers = %d", c);
 return 0;
 }
+=======
+4
+#include<stdio.h>
+int i=1;
+int a=1;
+>>>>>>> 1d77c475058668f654f8a1a4cb0e49be0d6a8aa2

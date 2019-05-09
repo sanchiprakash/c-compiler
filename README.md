@@ -8,7 +8,7 @@ Compilation Steps-
   Hit localhost:3000/ and enter your c-code(The first line contains number of lines in the input)   
   Click Submit
 
-Alernate Compilation Steps- 
+Alernate Compilation Steps-
   cd c-compiler
   cd bin
 	lex new.l

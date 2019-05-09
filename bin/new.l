@@ -1,7 +1,9 @@
 %{
 #include"y.tab.h"
+#include<stdio.h>
+#include<ctype.h>
 extern yylval;
-int c=2;
+int c=0;
 %}
 
 alpha [a-zA-Z]
@@ -54,3 +56,17 @@ int yywrap()
 {
     return 0;
 }
+/*
+int main()
+{
+    FILE *fpi, *fpo;
+    fpi = fopen("line.txt", "r");
+
+	printf("%s",yyin);
+
+
+    yylex();
+    return 0;
+}
+
+*/
